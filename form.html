@@ -6,8 +6,9 @@
 <title>Untitled Document</title>
 
  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-formhelpers.min.css">
 </head>
 <body style="background-color:lightgray">
     <nav class="navbar navbar-inverse">
@@ -300,18 +301,50 @@
                                     </select>
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword2">Password</label>
-                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                <label for="colorPicker">ColorPicker</label>
+                                    <div class="bfh-colorpicker" data-name="colorpicker1">
+                                    </div>
+
+                            </div>
+                            <div class="form-group"> <!-- Date input -->
+                                <label >Date Input</label>
+                                <div class="bfh-datepicker">
+                                </div>
+                                
+                            </div>
+                            <div class="from-group">
+                                <label> Time Input</label><!--esht me lek-->
+                                <div class="bfh-timepicker" data-time="now">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="textArea2">TextArea</label>
-                                <textarea class="form-control" rows="3" id="textArea2" placeholder="Textarea"></textarea>
+                                <label>Slider</label>
+                                <div class="bfh-slider" data-name="slider1">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="readOnly2">Readonly</label>
-                                <input class="form-control" id="readOnly2" type="text" readonly placeholder="ReadOnly">
+                                <label>Country Picker</label>
+                                <select class="form-control bfh-countries" data-country="US"></select>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                             <div class="form-group">
+                                <label>State Picker</label>
+                                <select class="form-control bfh-states" data-country="US" data-state="CA"></select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control bfh-states" data-country="US" data-state="CA"></select>
+                            </div>
+                            <div class="form-group">
+                                <label>Currency Picker</label>
+                                <select class="form-control bfh-currencies" data-currency="EUR"></select>
+                            </div>
+                            <div class="form-group">
+                                <label>Language Picker</label>
+                                <select class="form-control bfh-languages" data-language="en"></select>
+                            </div>
+                            <div class="form-group">
+                                <label>Timezone Picker</label>
+                                <select class="form-control bfh-timezones" data-country="US"></select>
+                            </div>
                         </form>
                     </div>
                 </div><!--end of Panel-->    
@@ -320,6 +353,8 @@
         </div>
        
     </div><!-- end of row-->
+    <script src= "js/bootstrap-formhelpers.js"></script>
 </div>    
+    
 </body>
 </html>
