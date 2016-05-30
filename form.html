@@ -1,13 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Forms</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forms</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap-formhelpers.min.css">
+        <script src="script.js"></script>
 </head>
 <body style="background-color:lightgray">
     <nav class="navbar navbar-inverse">
@@ -15,7 +16,6 @@
             <div class="navbar-header">
                 <a href="#" class="navbar-brand">Bootstrap Admin Theme</a>
             </div>
-            
             <div class="col-sm-6 col-md-7">
                 <form class="navbar-form navbar-right" role="search">
                     <div class="input-group">
@@ -26,327 +26,360 @@
                     </div>
                 </form>
             </div>
-                <ul class=" nav navbar-nav navbar-right ">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Log in</a></li>
-                            <li><a href="#">Sign Up</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <ul class=" nav navbar-nav navbar-right ">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav> <!-- end of navbar-->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar"><!--dashboard-->
-            <ul class="nav nav-sidebar">
-                <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-stats"></i> Statistics</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-th-list"></i> Tables</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-record"></i> Buttons</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-pencil"></i> Editors</a></li>
-                <li><a href="form.html"><i class="glyphicon glyphicon-tasks"></i> Forms</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-th-list"></i> Pages<span class="caret"></span> </a></li>
-            </ul>
-        </div><!-- end of dashboard-->
-        <div class="col-md-10 col-sm-9 col-xs-12">
-            <div class="col-md-6 col-sm-6 "><!-- horizontal form-->
-                <div class="panel ">
-                    <div class="panel-heading inline ">Horizontal Form
-                        <div class="group-btn pull-right inline-block " role="group">
-                            <button type="button" class="glyphicon glyphicon-refresh"></button>
-                            <button type="button" class="glyphicon glyphicon-cog"></button>
-                        </div>
-                    </div>
-                <div class="panel-body">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="inputEmail1" class="col-sm-2 control-label">Text Field</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword1" class="col-sm-2 control-label">Password Field</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="Textarea1" class="col-sm-2 control-label">TextArea</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" rows="3" id="TextArea1" placeholder="Textarea"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="readOnly1" class="col-sm-2 control-label">Readonly</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" id="readOnly1" type="text" readonly placeholder="ReadOnly">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Checkbox
-                            </label>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar"><!--dashboard-->
+                <ul class="nav nav-sidebar">
+                    <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-stats"></i> Statistics</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-th-list"></i> Tables</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-record"></i> Buttons</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-pencil"></i> Editors</a></li>
+                    <li><a href="form.html"><i class="glyphicon glyphicon-tasks"></i> Forms</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-th-list"></i> Pages<span class="caret"></span> </a></li>
+                </ul>
+            </div><!-- end of dashboard-->
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <div class="col-md-6 col-sm-6"><!-- horizontal form-->
+                    <div class="panel">
+                        <div class="panel-heading">Horizontal Form
+                            <div class="group-btn pull-right" role="group">
+                                <button type="button" class="glyphicon glyphicon-refresh" id="myBtn"></button>
+                                <button type="button" class="glyphicon glyphicon-cog"></button>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Checkbox
-                            </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                        </div>
-                    </div>
-                </form>
-                </div>
-                </div><!-- end of panel-->        
-            </div><!--end of horizontal form-->
-            <div class="col-md-6 col-sm-6 "><!--second block-->
-                <div class="panel ">
-                    <div class="panel-heading inline ">Vertical form
-                        <div class="group-btn pull-right inline-block " role="group">
-                            <button type="button" class="glyphicon glyphicon-refresh"></button>
-                            <button type="button" class="glyphicon glyphicon-cog"></button>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="textField2">Email address</label>
-                                <input type="text" class="form-control" id="textField2" placeholder="textfield">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword2">Password</label>
-                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <label for="textArea2">TextArea</label>
-                                <textarea class="form-control" rows="3" id="textArea2" placeholder="Textarea"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="readOnly2">Readonly</label>
-                                <input class="form-control" id="readOnly2" type="text" readonly placeholder="ReadOnly">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-                </div><!--end of Panel-->    
-            </div><!-- end of second block -->
-        </div>
-        <div class="col-md-10 col-sm-9 col-xs-12 pull-right">
-            <div class="col-md-6 col-sm-6 "><!-- horizontal form-->
-                <div class="panel">  
-                    <div class="panel-body">
-                        <form class="form-horizontal">
-                        <h4>Default Form Elements</h4><hr><!-- Default Form Elements-->
-                        <div class="form-group">
-                            <label for="inputText3" class="col-sm-2 control-label">Text Field</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputText3" placeholder="Default Text Field">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAuto3" class="col-sm-2 control-label">Auto Complete</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputAuto3" placeholder="Type something" data-provide="typeahead">
-                                <small><strong>Note:</strong> Works in Chrome, Firefox, Opera</small>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword1" class="col-sm-2 control-label">Password Field</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Textarea1" class="col-sm-2 control-label">TextArea</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" id="TextArea1" placeholder="Textarea"></textarea>
-                            </div>
-                        </div> <!--End of Default Form Elements-->
-
-                        <h4>Unstyled Checkbox</h4><hr><!-- Unstyled Checkbox-->
-
-                        <div class="form-group">
-                            <label class="col-sm-2">Checkbox</label>
-                            <div class="col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox"> Checkbox 1
-                                </label>
-                              </div>
-                            </div>
-                        </div>
-                         <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox"> Checkbox 2
-                                </label>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox"> Checkbox 3
-                                </label>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2">Checkbox</label>
-                            <div class="col-sm-10">
-                              <div class="checkbox">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox"> Checkbox 1
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox"> Checkbox 2
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox"> Checkbox 3
-                                </label>
-                              </div>
-                            </div>
-                        </div><!-- End of Unstyled Checkbox-->
-
-                        <h4>Unstyled Radiobox</h4><hr> <!-- Unstyled Radiobox-->
-
-                        <div class="form-group">
-                            <label class="col-sm-2">Radios default</label>
-                            <div class="col-sm-10">
-                              <div class="radio">
-                                <label>
-                                  <input type="radio"> Radiobox 1
-                                </label>
-                              </div>
-                            </div>
-                        </div>
-                         <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="radio">
-                                <label>
-                                  <input type="radio"> Radiobox  2
-                                </label>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="radio">
-                                <label>
-                                  <input type="radio"> Radiobox  3
-                                </label>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2">Inline</label>
-                            <div class="col-sm-10">
-                              <div class="radio">
-                                <label class="radio-inline">
-                                    <input type="radio"> Radiobox  1
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio"> Radiobox  2
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio"> Radiobox  3
-                                </label>
-                              </div>
-                            </div>
-                        </div> <!--End of Unstyled Radiobox-->
-
-                        <h4>File Inputs</h4><hr><!--File Inputs-->
-                        <div class="form group">
-                            <label class="col-sm-2">Form Input </label>
-                            <input type="file" class="form-control-file">
-                        </div><!-- End of File Inputs-->
-
-                    </form>
-                    </div><!-- end of panel body--> 
-                </div><!-- end of panel-->        
-            </div><!--end of horizontal form 3-->
-            <div class="col-md-6 col-sm-6 "><!--Vertical Form4-->
-                <div class="panel ">
-                    <div class="panel-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="selectField4">Select</label>
-                                    <select class="form-control" id="selectField4">
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                        <option>Option 4</option>
-                                        <option>Option 5</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="colorPicker">ColorPicker</label>
-                                    <div class="bfh-colorpicker" data-name="colorpicker1">
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail1" class="col-sm-2 control-label">Text Field</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword1" class="col-sm-2 control-label">Password Field</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Textarea1" class="col-sm-2 control-label">TextArea</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="3" id="TextArea1" placeholder="Textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="readOnly1" class="col-sm-2 control-label">Readonly</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" id="readOnly1" type="text" readonly placeholder="ReadOnly">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Checkbox
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Checkbox
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- end of panel-->        
+                </div><!--end of horizontal form-->
+                <div class="col-md-6 col-sm-6 "><!--second block-->
+                    <div class="panel ">
+                        <div class="panel-heading inline ">Vertical form
+                            <div class="group-btn pull-right inline-block " role="group">
+                                <button type="button" class="glyphicon glyphicon-refresh"></button>
+                                <button type="button" class="glyphicon glyphicon-cog"S></button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="textField2">Email address</label>
+                                    <input type="text" class="form-control" id="textField2" placeholder="textfield">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword2">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="textArea2">TextArea</label>
+                                    <textarea class="form-control" rows="3" id="textArea2" placeholder="Textarea"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="readOnly2">Readonly</label>
+                                    <input class="form-control" id="readOnly2" type="text" readonly placeholder="ReadOnly">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div><!--end of Panel-->    
+                </div><!-- end of second block -->
+            </div>
+            <div class="col-md-10 col-sm-9 col-xs-12 pull-right">
+                <div class="col-md-6 col-sm-6 "><!-- horizontal form-->
+                    <div class="panel">  
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <h4>Default Form Elements</h4><hr><!-- Default Form Elements-->
+                                <div class="form-group">
+                                    <label for="inputText3" class="col-sm-2 control-label">Text Field</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputText3" placeholder="Default Text Field">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAuto3" class="col-sm-2 control-label">Auto Complete</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputAuto3" placeholder="Type something" data-provide="typeahead">
+                                        <small><strong>Note:</strong> Works in Chrome, Firefox, Opera</small>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword1" class="col-sm-2 control-label">Password Field</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Textarea1" class="col-sm-2 control-label">TextArea</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="3" id="TextArea1" placeholder="Textarea"></textarea>
+                                    </div>
+                                </div> <!--End of Default Form Elements-->
 
-                            </div>
-                            <div class="form-group"> <!-- Date input -->
-                                <label >Date Input</label>
-                                <div class="bfh-datepicker">
+                                <h4>Unstyled Checkbox</h4><hr><!-- Unstyled Checkbox-->
+
+                                <div class="form-group">
+                                    <label class="col-sm-2">Checkbox</label>
+                                    <div class="col-sm-10">
+                                        <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Checkbox 1
+                                        </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                
-                            </div>
-                            <div class="from-group">
-                                <label> Time Input</label><!--esht me lek-->
-                                <div class="bfh-timepicker" data-time="now">
+                                 <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                        <label>
+                                          <input type="checkbox"> Checkbox 2
+                                        </label>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Slider</label>
-                                <div class="bfh-slider" data-name="slider1">
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                        <label>
+                                          <input type="checkbox"> Checkbox 3
+                                        </label>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Country Picker</label>
-                                <select class="form-control bfh-countries" data-country="US"></select>
-                            </div>
-                             <div class="form-group">
-                                <label>State Picker</label>
-                                <select class="form-control bfh-states" data-country="US" data-state="CA"></select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control bfh-states" data-country="US" data-state="CA"></select>
-                            </div>
-                            <div class="form-group">
-                                <label>Currency Picker</label>
-                                <select class="form-control bfh-currencies" data-currency="EUR"></select>
-                            </div>
-                            <div class="form-group">
-                                <label>Language Picker</label>
-                                <select class="form-control bfh-languages" data-language="en"></select>
-                            </div>
-                            <div class="form-group">
-                                <label>Timezone Picker</label>
-                                <select class="form-control bfh-timezones" data-country="US"></select>
-                            </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Checkbox</label>
+                                    <div class="col-sm-10">
+                                        <div class="checkbox">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox"> Checkbox 1
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox"> Checkbox 2
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox"> Checkbox 3
+                                        </label>
+                                      </div>
+                                    </div>
+                                </div><!-- End of Unstyled Checkbox-->
+
+                                <h4>Unstyled Radiobox</h4><hr> <!-- Unstyled Radiobox-->
+
+                                <div class="form-group">
+                                    <label class="col-sm-2">Radios default</label>
+                                    <div class="col-sm-10">
+                                        <div class="radio">
+                                            <label>
+                                            <input type="radio"> Radiobox 1
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="radio">
+                                            <label>
+                                            <input type="radio"> Radiobox  2
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="radio">
+                                            <label>
+                                            <input type="radio"> Radiobox  3
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Inline</label>
+                                    <div class="col-sm-10">
+                                        <div class="radio">
+                                        <label class="radio-inline">
+                                            <input type="radio"> Radiobox  1
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio"> Radiobox  2
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio"> Radiobox  3
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div> <!--End of Unstyled Radiobox-->
+                                <h4>File Inputs</h4><hr><!--File Inputs-->
+                                <div class="form group">
+                                    <label class="col-sm-2">Form Input </label>
+                                    <input type="file" class="form-control-file">
+                                </div><!-- End of File Inputs-->
                         </form>
-                    </div>
-                </div><!--end of Panel-->    
-            </div><!-- end of second block -->
-        </div>
-    </div><!-- end of row-->
+                    </div><!-- end of panel body--> 
+                    </div><!-- end of panel-->        
+                </div><!--end of horizontal form 3-->
+                <div class="col-md-6 col-sm-6" id="changeBg"><!--Vertical Form4-->
+                    <div class="panel">
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="selectField4">Select</label>
+                                        <select class="form-control" id="selectField4">
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="colorPicker">ColorPicker</label>
+                                        <div class="bfh-colorpicker" data-name="colorpicker1" id="colorpicker2" onclick="colorPicker()">
+                                        </div>
+                                </div>
+                                <div class="form-group"> <!-- Date input -->
+                                    <label >Date Input</label>
+                                    <div class="bfh-datepicker">
+                                    </div>
+                                </div>
+                                <div class="from-group">
+                                    <label> Time Input</label><!--esht me lek-->
+                                    <div class="bfh-timepicker" data-time="now">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Slider</label>
+                                    <div class="bfh-slider" data-name="slider1">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Country Picker</label>
+                                    <select class="form-control bfh-countries" data-country="US">
+                                        <option>Albania</option>
+                                        <option>Italy</option>
+                                        <option>USA</option>
+                                        <option>Grand Britain</option>
+                                        <option>Afganistan</option>
+                                    </select>
+                                </div>
+                                 <div class="form-group">
+                                    <label>State Picker</label>
+                                    <select class="form-control bfh-states" data-country="US" data-state="CA">
+                                        <option>Albania</option>
+                                        <option>Italy</option>
+                                        <option>USA</option>
+                                        <option>Grand Britain</option>
+                                        <option>Afganistan</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control bfh-states" data-country="US" data-state="CA">
+                                        <option>Albania</option>
+                                        <option>Italy</option>
+                                        <option>USA</option>
+                                        <option>Grand Britain</option>
+                                        <option>Afganistan</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Currency Picker</label>
+                                    <select class="form-control bfh-currencies" data-currency="EUR">
+                                        <option>EUR</option>
+                                        <option>USD</option>
+                                        <option>CAD</option>
+                                        <option>AUD</option>
+                                        <option>GBP</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Language Picker</label>
+                                    <select class="form-control bfh-languages" data-language="en">
+                                        <option>English</option>
+                                        <option>Spanish</option>
+                                        <option>Italian</option>
+                                        <option>German</option>
+                                        <option>Arab</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Timezone Picker</label>
+                                    <select class="form-control bfh-timezones" data-country="US">
+                                        <option>GMT+1</option>
+                                        <option>GMT+2</option>
+                                        <option>GMT+3</option>
+                                        <option>GMT+4</option>
+                                        <option>GMT+5</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!--end of Panel-->    
+                </div><!-- end of second block -->
+            </div>
+        </div><!-- end of row-->
+    </div>
     <script src= "js/bootstrap-formhelpers.js"></script>
-</div>    
+
 </body>
 </html>
